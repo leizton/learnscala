@@ -1,0 +1,22 @@
+group 'com.whiker'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+        'org.scala-lang:scala-library:2.12.1',
+        'com.google.guava:guava:19.0',
+        'joda-time:joda-time:2.5',
+        'com.typesafe.akka:akka-actor_2.12:2.4.14'
+    )
+    testCompile (
+        'junit:junit:4.11'
+    )
+}
